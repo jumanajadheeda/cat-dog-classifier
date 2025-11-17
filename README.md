@@ -4,6 +4,7 @@ A deep learning-based image classifier that distinguishes between cats and dogs 
 The model is trained on an 8,000-image dataset and achieves strong performance with a simple CNN architecture.
 
 📁 Project Structure
+
 cat-dog-classifier/
 │
 ├── model.keras              
@@ -14,11 +15,14 @@ cat-dog-classifier/
 📦 Dataset
 
 Total images: 8,000
+
 Training: 6,400
+
 Validation: 1,600
 
 Classes:
 🐱 Cat
+
 🐶 Dog
 
 Loaded using:
@@ -33,11 +37,15 @@ image_dataset_from_directory(
 
 Type: Convolutional Neural Network (CNN)
 
+
 Layers: Conv → MaxPool → Dropout → Dense
+
 
 Optimizer: Adam
 
+
 Loss: Binary Crossentropy
+
 
 Epochs: 10
 
