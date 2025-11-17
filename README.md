@@ -5,7 +5,8 @@ The model is trained on an 8,000-image dataset and achieves strong performance w
 
 📁 Project Structure
 
-cat-dog-classifier/
+cat-dog-classifier
+/
 │
 ├── model.keras              
 ├── cat-dog-classifier.h5    
@@ -21,6 +22,7 @@ Training: 6,400
 Validation: 1,600
 
 Classes:
+
 🐱 Cat
 
 🐶 Dog
@@ -50,6 +52,7 @@ Loss: Binary Crossentropy
 Epochs: 10
 
 🚀 How to Use the Model
+
 1️⃣ Load the Model
 from tensorflow.keras.models import load_model
 model = load_model("model.keras")
