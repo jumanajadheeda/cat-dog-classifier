@@ -14,7 +14,7 @@ if uploaded_file is not None:
     st.image(img, caption='Uploaded Image', use_column_width=True)
 
     # Preprocess
-    img = img.resize((180, 180))
+    img = img.resize((150, 150))
     img_array = tf.keras.utils.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0)
     img_array = img_array / 255.0  # normalize if model trained on 0-1 range
