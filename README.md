@@ -28,6 +28,7 @@ image_dataset_from_directory(
 )
 
 🧠 Model Summary
+
 Type: Convolutional Neural Network (CNN)
 Layers: Conv → MaxPool → Dropout → Dense
 Optimizer: Adam
@@ -35,6 +36,7 @@ Loss: Binary Crossentropy
 Training Epochs: 10
 
 How to Use the Model
+
 1️ Load the Model
 from tensorflow.keras.models import load_model
 model = load_model("model.keras")
@@ -54,6 +56,7 @@ else:
     print("Cat")
 
 Training Highlights
+
 Automatic image loading & batching
 Normalization layer for better convergence
 Dropout to prevent overfitting
@@ -61,6 +64,7 @@ Validation accuracy improves consistently
 Works well even with small model size
 
 Requirements
+
 Install required libraries:
 pip install tensorflow matplotlib numpy
 
