@@ -12,6 +12,7 @@ cat-dog-classifier/
 └── (scripts / notebooks)
 
 📦 Dataset
+
 Total images: 8,000
 Training: 6,400
 Validation: 1,600
@@ -20,7 +21,8 @@ Classes:
 🐱 Cat
 🐶 Dog
 
-Dataset loaded using:
+Loaded using:
+
 image_dataset_from_directory(
     "cat_vs_dog/dataset",
     image_size=(256, 256),
@@ -30,18 +32,21 @@ image_dataset_from_directory(
 🧠 Model Summary
 
 Type: Convolutional Neural Network (CNN)
+
 Layers: Conv → MaxPool → Dropout → Dense
+
 Optimizer: Adam
+
 Loss: Binary Crossentropy
-Training Epochs: 10
 
-How to Use the Model
+Epochs: 10
 
-1️ Load the Model
+🚀 How to Use the Model
+1️⃣ Load the Model
 from tensorflow.keras.models import load_model
 model = load_model("model.keras")
 
-2️ Predict on a New Image
+2️⃣ Predict on a New Image
 import tensorflow as tf
 
 img = tf.keras.utils.load_img("your_image.jpg", target_size=(256, 256))
@@ -55,27 +60,36 @@ if prediction[0] > 0.5:
 else:
     print("Cat")
 
-Training Highlights
+📈 Training Highlights
 
 Automatic image loading & batching
-Normalization layer for better convergence
-Dropout to prevent overfitting
-Validation accuracy improves consistently
-Works well even with small model size
 
-Requirements
+Normalization for faster convergence
 
-Install required libraries:
+Dropout to reduce overfitting
+
+Validation accuracy improves steadily
+
+Works well even with a small model
+
+📌 Requirements
+
+Install dependencies:
+
 pip install tensorflow matplotlib numpy
 
-Notes
-Works with .keras and .h5 models.
-Use images 256×256 for prediction.
+📝 Notes
 
-Contributing
+Supports .keras and .h5 model formats
+
+Use 256×256 resolution images for best prediction
+
+🤝 Contributing
+
 Pull requests are welcome!
-If you want to improve the model or add features, feel free to open an issue.
+Feel free to submit improvements or suggestions.
 
-Author
+👩‍💻 Author
+
 Jumana
 B.Tech CSE | ML & AI Enthusiast
